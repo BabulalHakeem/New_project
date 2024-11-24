@@ -1,0 +1,100 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.weather-container {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  width: 80%;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.weather-info h2 {
+  font-size: 1.5rem;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+.weather-icon {
+  margin-top: 10px;
+}
+
+/* Dynamic Background Themes */
+.app-summer {
+  background-color: #ffd54f; /* Yellowish */
+  background-image: url("https://i.imgur.com/Yoagf9P.jpg");
+  background-size: cover;
+  color: #4b2c20; /* Darker brown */
+}
+
+.app-winter {
+  background-color: #90caf9; /* Light blue */
+  background-image: url("https://i.imgur.com/2gxTQc6.jpg");
+  background-size: cover;
+  color: #1e3c72; /* Dark blue */
+}
+
+.app-spring {
+  background-color: #a5d6a7; /* Greenish */
+  background-image: url("https://i.imgur.com/dPsdzQm.jpg");
+  background-size: cover;
+  color: #2d5548; /* Dark green */
+}
+
+.app-default {
+  background-color: #eceff1; /* Neutral gray */
+  color: black;
+}
